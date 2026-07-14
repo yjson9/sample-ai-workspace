@@ -1,0 +1,48 @@
+# === 로그 / 임시 파일 ===
+*.log
+*.tmp
+
+# === 환경설정 / 비밀값 ===
+.env
+.env.*
+*password*
+*secret*
+*credential*
+*token*
+
+# 예외: 예시/템플릿 파일은 추적 허용 (실제 비밀값이 아님)
+!.env.example
+!.env.sample
+!*.example
+!*.sample
+
+# 주의: 위 *secret* / *token* / *password* / *credential* 패턴은 광범위합니다.
+#  - 정상 문서(예: secret-management-guide.md, token-design.md)까지 제외될 수 있습니다.
+#  - 그런 파일을 추적하려면 아래처럼 개별 예외를 추가하세요:
+#      !docs/token-design.md
+#  - 파일이 무시되는지 확인: git check-ignore -v <경로>
+
+# === 덤프 파일 ===
+*.dmp
+*.dump
+
+# === 언어/런타임 캐시 ===
+__pycache__/
+.venv/
+node_modules/
+
+# === OS 생성 파일 ===
+.DS_Store
+Thumbs.db
+
+# === 비공개 아카이브 ===
+08_archive/private/
+
+# ------------------------------------------------------------------
+# 참고:
+# - 실제 입력 자료 전체를 무조건 ignore하지 않습니다.
+# - 프로젝트 보안 수준에 따라 아래처럼 추가로 ignore할 수 있습니다.
+#     01_inputs/raw/
+#     03_working/data/
+#   (필요 시 위 주석을 해제하거나 프로젝트에 맞게 경로를 추가하세요.)
+# ------------------------------------------------------------------

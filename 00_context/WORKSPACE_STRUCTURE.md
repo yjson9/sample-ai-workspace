@@ -1,0 +1,95 @@
+﻿# WORKSPACE_STRUCTURE — 워크스페이스 구조
+
+> 이 파일은 `09_scripts/tools/update_workspace_structure.ps1`(런처 `run.ps1`)로 자동 생성됩니다.
+> 직접 편집하지 말고 스크립트를 다시 실행하세요.
+
+- 생성 시각: 2026-07-14 19:07:19
+- 기준 루트: `sample-ai-workspace/`
+- MaxDepth: 4
+- 제외 폴더: `.git`, `node_modules`, `.venv`, `__pycache__`, `dist`, `build`, `target`
+
+---
+
+- **sample-ai-workspace/**
+  - **00_context/**
+    - AI_INSTRUCTIONS.md
+    - DIRECTORY_GUIDE.md
+    - DOCUMENT_INDEX.md
+    - GLOSSARY.md
+    - OUTPUT_STANDARDS.md
+    - PROJECT_OVERVIEW.md
+    - SECURITY_RULES.md
+    - WORKFLOW.md
+    - WORKSPACE_STRUCTURE.md
+  - **01_inputs/**
+    - **raw/**
+      - .gitkeep
+    - **references/**
+      - .gitkeep
+    - **requirements/**
+      - .gitkeep
+    - **samples/**
+      - .gitkeep
+    - **standards/**
+      - .gitkeep
+  - **02_requests/**
+    - **completed/**
+      - .gitkeep
+    - **in_progress/**
+      - .gitkeep
+    - **pending/**
+      - .gitkeep
+    - _TEMPLATE_request.md
+  - **03_working/**
+    - **analysis/**
+      - .gitkeep
+    - **data/**
+      - .gitkeep
+    - **diagrams/**
+      - .gitkeep
+    - **drafts/**
+      - .gitkeep
+  - **04_outputs/**
+    - **diagrams/**
+      - .gitkeep
+    - **documents/**
+      - .gitkeep
+    - **reports/**
+      - .gitkeep
+    - **scripts/**
+      - .gitkeep
+    - **spreadsheets/**
+      - .gitkeep
+  - **05_feedback/**
+    - **approved/**
+      - _TEMPLATE_approval.md
+    - **corrections/**
+      - _TEMPLATE_correction.md
+    - **review_requests/**
+      - _TEMPLATE_review_request.md
+  - **06_decisions/**
+    - CHANGE_LOG.md
+    - DECISION_LOG.md
+    - OPEN_QUESTIONS.md
+  - **07_prompts/**
+    - **history/**
+      - .gitkeep
+    - **reusable/**
+      - analyze_document_prompt.md
+      - clean_after_input_removal_prompt.md
+      - create_deliverable_prompt.md
+      - review_output_prompt.md
+      - setup_workspace_prompt.md
+  - **08_archive/**
+    - .gitkeep
+  - **09_scripts/**
+    - **tools/**
+      - clean_orphans.py
+      - convert_excel_to_ai.py
+      - update_workspace_structure.ps1
+    - README.md
+    - requirements.txt
+    - run.ps1
+  - .gitignore
+  - AGENTS.md
+  - README.md
